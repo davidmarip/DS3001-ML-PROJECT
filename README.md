@@ -1,9 +1,9 @@
-# 🧠 DS3001-ML-PROJECT  
+#  DS3001-ML-PROJECT  
 ### *Food Healthiness Classifier*  
 
 ---
 
-## 📘 Overview
+##  Overview
 This project explores how machine learning can classify packaged food products as **healthy**, **intermediate**, or **unhealthy** based solely on ingredient lists.  
 The dataset originates from the **U.S. Department of Agriculture’s FoodData Central**.  
 
@@ -17,7 +17,7 @@ This project was developed for **DS 3001: Machine Learning** and demonstrates an
 
 ---
 
-## ⚙️ Environment & Tools
+##  Environment & Tools
 
 **Platform:** Local development using Visual Studio Code and Jupyter Notebooks  
 **Language:** Python 3.11 (virtual environment: `.venv`)  
@@ -67,4 +67,45 @@ DS3001-ML-PROJECT/
 ├── LICENSE                          # MIT License
 └── README.md                        # Project overview (this file)
 ```
+##  Reproducing the Analysis
 
+### **Step 1 – Preprocessing**
+Open `WORKSPACE/Preprocessing.ipynb` and run all cells.  
+This notebook:
+- Loads and cleans raw `food.csv` + `branded_food.csv`  
+- Standardizes ingredient strings  
+- Merges datasets on `fdc_id`  
+- Exports the processed dataset to:
+
+---
+
+### **Step 2 – Exploratory Analysis**
+Run:
+- `WORKSPACE/Frequency.ipynb` → analyzes ingredient count distributions  
+- `WORKSPACE/IngredientPrevalence.ipynb` → identifies top 30 most frequent ingredients  
+
+The following figures will be generated and saved to:
+
+
+---
+
+### **Step 3 – Modeling & Evaluation**
+Run `WORKSPACE/Methodology.ipynb`.  
+This notebook:
+- Applies heuristic labeling rules to classify foods as **healthy**, **intermediate**, or **unhealthy**  
+- Uses TF-IDF to vectorize ingredient text for feature extraction  
+- Trains a **Random Forest Classifier** with optimized thresholds  
+- Evaluates performance using accuracy, precision, recall, and F1-macro metrics  
+- Saves visualizations for model performance  
+
+Outputs are stored in:
+
+
+
+---
+
+## 📊 Key Insights
+- Ingredient list lengths vary widely — most products contain fewer than 25 components.  
+- Common unhealthy indicators: *high fructose corn syrup (HFCS)*, *refined flour*, *preservatives*.  
+- Common healthy indicators: *whole grains*, *vegetables*, *legumes*.  
+- The Random Forest model achieved approximately **0.82 macro F1-score**, demonstrating strong performance in distinguishing between healthy and unhealthy products using only textual ingredient data.
