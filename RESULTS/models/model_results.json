@@ -1,0 +1,10 @@
+{
+  "random_forest": {
+    "f1": 0.9863842662632375,
+    "accuracy": 0.991
+  },
+  "logistic_regression": {
+    "f1": 0.9902034664657121,
+    "accuracy": 0.9935
+  }
+}

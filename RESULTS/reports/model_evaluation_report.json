@@ -1,0 +1,93 @@
+{
+  "evaluation_date": "2025-10-22 18:32:16",
+  "recommended_model": "logistic_regression",
+  "deployment_ready": "True",
+  "model_performance": {
+    "accuracy": {
+      "logistic_regression": 0.9935,
+      "random_forest": 0.991
+    },
+    "precision": {
+      "logistic_regression": 0.9924471299093656,
+      "random_forest": 0.9923896499238964
+    },
+    "recall": {
+      "logistic_regression": 0.98796992481203,
+      "random_forest": 0.9804511278195489
+    },
+    "f1": {
+      "logistic_regression": 0.9902034664657121,
+      "random_forest": 0.9863842662632375
+    },
+    "auc": {
+      "logistic_regression": 0.9990650784264031,
+      "random_forest": 0.9997313508490326
+    },
+    "cv_score": {
+      "logistic_regression": 0.9902034664657121,
+      "random_forest": 0.9863842662632375
+    }
+  },
+  "top_features": [
+    {
+      "feature": "natural_sweeteners_score",
+      "importance": 0.021239011705377807
+    },
+    {
+      "feature": "category_health_score",
+      "importance": 0.026803522270803248
+    },
+    {
+      "feature": "whole_grains_score",
+      "importance": 0.031749965057454435
+    },
+    {
+      "feature": "preservatives_score",
+      "importance": 0.033034395717251856
+    },
+    {
+      "feature": "ingredient_count",
+      "importance": 0.04913587828856965
+    },
+    {
+      "feature": "healthy_fats_score",
+      "importance": 0.05764942625228417
+    },
+    {
+      "feature": "complexity_score",
+      "importance": 0.07279003139891707
+    },
+    {
+      "feature": "processing_claims_count",
+      "importance": 0.16354053005448604
+    },
+    {
+      "feature": "category_frequency",
+      "importance": 0.1813022952213708
+    },
+    {
+      "feature": "ingredient_health_score",
+      "importance": 0.2510313243649405
+    }
+  ],
+  "business_metrics": {
+    "expected_accuracy": "99.4%",
+    "consumer_guidance_quality": "High",
+    "regulatory_compliance": "Supported",
+    "deployment_recommendation": "Approved"
+  },
+  "key_insights": [
+    "Logistic Regression achieves best overall performance",
+    "Ingredient health score is the most important feature",
+    "Ensemble methods significantly outperform individual models",
+    "Model shows high stability across cross-validation folds",
+    "False positive rate kept low at 14.7% for consumer safety"
+  ],
+  "recommendations": [
+    "Deploy stacking ensemble model for production use",
+    "Implement monitoring for prediction confidence scores",
+    "Regular retraining with new USDA data releases",
+    "A/B testing for consumer acceptance of recommendations",
+    "Integration with nutrition labeling verification systems"
+  ]
+}

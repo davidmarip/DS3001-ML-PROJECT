@@ -1,1 +1,68 @@
+# Data files - exclude large datasets
+DATA/*.csv
+!DATA/placeholder.txt
+!DATA/RAWDATA.md
+
+# Processed data - exclude cleaned datasets
+RESULTS/processed_data/*.csv
+RESULTS/processed_data/*.json
+!RESULTS/processed_data/placeholder.txt
+
+# Legacy processed data path
 DATA/processed/branded_food_clean.csv
+
+# Large model files
+RESULTS/models/*.pkl
+RESULTS/models/*.joblib
+!RESULTS/models/placeholder.txt
+
+# Large output files
+RESULTS/features/*.csv
+!RESULTS/features/placeholder.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Output files that may be large
+*.log
+*.out

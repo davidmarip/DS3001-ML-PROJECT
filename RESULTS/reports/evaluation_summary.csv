@@ -1,0 +1,6 @@
+Metric,Value
+Best Model,Logistic Regression
+Accuracy,0.994
+F1 Score,0.990
+AUC,0.999
+Deployment Status,Ready
