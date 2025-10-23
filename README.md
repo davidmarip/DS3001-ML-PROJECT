@@ -15,10 +15,6 @@ This project implements a comprehensive machine learning pipeline to classify fo
 ### Key Achievements
 - **99.4% Classification Accuracy** using ensemble methods
 - **44 Engineered Features** including nutritional ratios and brand intelligence
-- **Interactive Dashboards** with 40+ visualizations saved in dual formats (HTML/PNG)
-- **Ingredient Network Analysis** with 1,386 ingredients and 130k+ co-occurrence relationships
-- **Brand Intelligence Suite** with market positioning and growth analysis
-- **Real-time Health Calculator** with interactive scoring widgets
 
 ### Current Project Structure
 
@@ -29,8 +25,7 @@ DS3001-ML-PROJECT-1/
 │   ├── 02_Preprocessing.ipynb          # Data Cleaning & Memory Optimization
 │   ├── 03_Feature_Engineering.ipynb    # 44 Advanced Features Created
 │   ├── 04_Modeling.ipynb               # Ensemble ML (99.4% Accuracy)
-│   ├── 05_Evaluation.ipynb             # Model Validation & Performance Analysis
-│   └── 06_Interactive_Visualizations.ipynb # Professional Dashboards & Analytics
+│   └── 05_Evaluation.ipynb             # Model Validation & Performance Analysis
 ├── DATA/                               # Raw USDA Datasets (Excluded from Git)
 │   ├── branded_food.csv               # Main dataset (939MB)
 │   ├── food_nutrient.csv              # Nutritional data (1.4GB)
@@ -38,9 +33,7 @@ DS3001-ML-PROJECT-1/
 │   ├── food.csv                       # Food reference (180MB)
 │   └── [8 additional supporting files]
 ├── RESULTS/                            # Generated Outputs & Artifacts
-│   ├── dashboards/                    # Executive & brand intelligence dashboards
 │   ├── figures/                       # 40+ visualizations (HTML + PNG)
-│   ├── networks/                      # Ingredient network analysis
 │   ├── models/                        # Trained model artifacts (.pkl, .json)
 │   ├── features/                      # Engineered features & scalers
 │   ├── reports/                       # Analysis summaries & evaluations
@@ -108,7 +101,7 @@ DS3001-ML-PROJECT-1/
 - Interactive network visualizations revealing ingredient substitution patterns
 - Professional dashboards with dual HTML/PNG export capabilities
 
-### 🛠️ Technical Implementation
+###  Technical Implementation
 
 #### Machine Learning Algorithms Implemented
 1. **Random Forest**: Primary ensemble achieving F1=0.986
@@ -123,7 +116,6 @@ DS3001-ML-PROJECT-1/
 - **Ingredient Features**: Health scoring and co-occurrence metrics
 - **Brand Features**: Intelligence and market positioning scores
 - **Text Features**: Advanced NLP processing of ingredient lists
-- **Interaction Features**: Cross-feature relationships and patterns
 
 #### Evaluation Metrics Achieved
 - **Primary**: F1 Scores of 0.986-0.990 across all models
@@ -162,7 +154,6 @@ jupyter lab
 03_Feature_Engineering.ipynb    # Advanced feature creation
 04_Modeling.ipynb               # Machine learning implementation
 05_Evaluation.ipynb             # Model validation and testing
-06_Interactive_Visualizations.ipynb  # Dashboard creation
 ```
 
 ### Key Visualizations
@@ -174,51 +165,6 @@ jupyter lab
 5. **Health Score Calculator**: Interactive real-time assessment
 6. **Trend Analysis**: Temporal ingredient and health pattern evolution
 
-### Academic Value
-
-#### Learning Objectives
-- **Data Science Pipeline**: End-to-end ML project implementation
-- **Feature Engineering**: Domain-specific feature creation
-- **Ensemble Methods**: Advanced ML algorithm combination
-- **Model Interpretability**: Understanding black-box models
-- **Business Analytics**: Translating insights to business value
-
-#### Skills Demonstrated
-- Large dataset handling and preprocessing
-- Advanced visualization and dashboard creation
-- Network analysis and graph theory applications
-- Time series analysis and trend detection
-- Model evaluation and validation strategies
-- Interactive widget development
-
-### Presentation Structure
-
-#### 15-20 Minute Presentation Flow:
-1. **Problem Statement** (3 min): Health classification challenge
-2. **Data Overview** (2 min): USDA dataset and preprocessing
-3. **Feature Engineering** (4 min): Advanced feature creation process
-4. **Modeling Approach** (4 min): Ensemble methods and evaluation
-5. **Results & Insights** (4 min): Performance metrics and findings
-6. **Business Impact** (2 min): Real-world applications and value
-7. **Q&A** (5 min): Technical and business questions
-
-### Team Collaboration
-
-#### Suggested Role Distribution:
-- **Data Engineer**: EDA and preprocessing notebooks
-- **Feature Engineer**: Advanced feature creation and engineering
-- **ML Engineer**: Modeling pipeline and ensemble implementation
-- **Visualization Specialist**: Dashboard and interactive components
-- **Business Analyst**: Insights interpretation and presentation
-
-### Future Enhancements
-
-1. **Real-time API**: Deploy model as web service
-2. **Mobile App**: Consumer-facing health scoring app
-3. **Recipe Analysis**: Extend to homemade food classification
-4. **International Data**: Include global food databases
-5. **Personalization**: User-specific health recommendations
-
 ### Support & Resources
 
 - **USDA FoodData Central**: https://fdc.nal.usda.gov/
@@ -227,6 +173,3 @@ jupyter lab
 - **XGBoost Documentation**: https://xgboost.readthedocs.io/
 
 ---
-
-
-## Food Healthiness Classifier ##
